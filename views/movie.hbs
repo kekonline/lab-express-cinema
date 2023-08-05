@@ -1,0 +1,23 @@
+<div class="oneMovie">
+  <div>
+    <img src="{{oneMovie.image}}" alt="Cover Picture Of {{oneMovie.title}}" />
+  </div>
+  <div class="needSomeSpace">
+    <a href="/movies/">Go Back</a>
+    <h2>{{oneMovie.title}}</h2>
+    <h3>Director: {{oneMovie.director}}</h3>
+    <h4>Stars</h4>
+    <ul>
+      {{#each oneMovie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{oneMovie.description}}</p>
+
+    {{#each oneMovie.showtimes}}
+      |{{this}}|
+    {{/each}}
+
+  </div>
+
+</div>

@@ -1,8 +1,91 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 98vw;
+  height: 98vh;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.introContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.introMenu {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+.introMenu img {
+  width: 1000px;
+}
+
+.introMenu div {
+  position: absolute;
+  top: -10px;
+  right: 80px;
+  width: 40%;
+}
+
+.introMenu h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+.introMenu a {
+  background-color: white;
+  text-decoration: none;
+  padding: 20px 40px;
+  border-radius: 100px;
+}
+
+.movieList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.movieBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.moveCatalog h2,
+h3 {
+  margin-left: 20px;
+}
+
+.oneMovie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneMovie img {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  width: 170px;
+}
+.oneMovie h3 {
+  margin-left: 0px;
+}
+
+.oneMovie ul {
+  padding-left: 20px;
+}
+
+.needSomeSpace{
+
+  margin-left: 50px;
 }
